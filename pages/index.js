@@ -8,7 +8,7 @@ export default function Home() {
     <div className={styles.container}>
   
       <Head>
-        <title>Pizza Time Pizza in Utah</title>
+        <title>Pizza Time Pizza in Utah!</title>
         <meta name="description" content="Best pizza shop in town!" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
