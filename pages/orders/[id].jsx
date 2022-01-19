@@ -6,6 +6,8 @@ const Order = () => {
 
     return (
         <div className={styles.container}>
+        <div className={left}></div>
+        <div className={right}></div>
 
         </div>
     );    
