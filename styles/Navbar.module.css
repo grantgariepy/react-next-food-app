@@ -11,7 +11,7 @@
 }
 
 .item{
-    flex: 2;
+    flex: 3;
     display: flex;
     align-items: center;
 }
@@ -70,6 +70,7 @@
 
 .cart{
     position: relative;
+    cursor: pointer;
 }
 
 .counter{
