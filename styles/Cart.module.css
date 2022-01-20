@@ -110,5 +110,9 @@
         content: "Total: ";
         font-weight: 500;
     }
-    
+
+    .wrapper{
+        width: 100%;
+    }
+
 }
