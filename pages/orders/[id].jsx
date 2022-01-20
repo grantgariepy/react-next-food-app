@@ -46,28 +46,28 @@ const Order = () => {
                         <Image alt="" src="/img/paid.png" width={30} height={30} />
                         <span>Payment</span>
                         <div className={styles.checkedIcon}>
-                            <Image alt="" src="/img/checked.png" width={20} height={20} />
+                            <Image className={styles.checkedIcon} alt="" src="/img/checked.png" width={20} height={20} />
                         </div>
                     </div>
                     <div className={statusClass(1)}>
                         <Image alt="" src="/img/bake.png" width={30} height={30} />
                         <span>Preparing</span>
                         <div className={styles.checkedIcon}>
-                            <Image alt="" src="/img/checked.png" width={20} height={20} />
+                            <Image className={styles.checkedIcon} alt="" src="/img/checked.png" width={20} height={20} />
                         </div>
                     </div>
                     <div className={statusClass(2)}>
                         <Image alt="" src="/img/bike.png" width={30} height={30} />
                         <span>On the way</span>
                         <div className={styles.checkedIcon}>
-                            <Image alt="" src="/img/checked.png" width={20} height={20} />
+                            <Image className={styles.checkedIcon} alt="" src="/img/checked.png" width={20} height={20} />
                         </div>
                     </div>
                     <div className={statusClass(3)}>
                         <Image alt="" src="/img/delivered.png" width={30} height={30} />
                         <span>Delivered</span>
                         <div className={styles.checkedIcon}>
-                            <Image alt="" src="/img/checked.png" width={20} height={20} />
+                            <Image className={styles.checkedIcon} alt="" src="/img/checked.png" width={20} height={20} />
                         </div>
                     </div>
                 </div>
