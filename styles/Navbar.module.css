@@ -68,6 +68,12 @@
     cursor: pointer;
 }
 
+.logo{
+    font-family: 'Dancing Script', cursive;
+    font-size: 60px;
+    cursor: pointer;
+}
+
 .cart{
     position: relative;
     cursor: pointer;
