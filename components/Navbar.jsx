@@ -1,8 +1,10 @@
 import Image from "next/image"
 import styles from "../styles/Navbar.module.css"
 
+
 const Navbar = () => {
     return (
+        
         <div className={styles.container}>
             <div className={styles.item}>
                 <div className={styles.callButton}>
