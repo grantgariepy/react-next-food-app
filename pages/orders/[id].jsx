@@ -6,10 +6,10 @@ const Order = () => {
 
     const status = 0;
 
-    const statusClass = (index)=>{
-        if(index-status < 1) return styles.done
-        if(index-status === 1) return styles.inProgress
-        if(index-status > 1) return styles.undone
+    const statusClass = (index) => {
+        if (index - status < 1) return styles.done
+        if (index - status === 1) return styles.inProgress
+        if (index - status > 1) return styles.undone
     }
 
     return (
@@ -17,28 +17,30 @@ const Order = () => {
             <div className={styles.left}>
                 <div className={styles.row}>
                     <table className={styles.table}>
-                        <tr className={styles.trTitle}>
-                            <th>Order ID</th>
-                            <th>Customer</th>
-                            <th>Address</th>
-                            <th>Total</th>
-                        </tr>
-                        <tr className={styles.tr}>
-                            <td>
-                                <span className={styles.id}>1238731988</span>
-                            </td>
-                            <td>
-                                <span className={styles.name}>
-                                    John Doe
-                                </span>
-                            </td>
-                            <td>
-                                <span className={styles.address}>123 Main St SLC, UT </span>
-                            </td>
-                            <td>
-                                <span className={styles.total}>$79.80</span>
-                            </td>
-                        </tr>
+                        <tbody>
+                            <tr className={styles.trTitle}>
+                                <th>Order ID</th>
+                                <th>Customer</th>
+                                <th>Address</th>
+                                <th>Total</th>
+                            </tr>
+                            <tr className={styles.tr}>
+                                <td>
+                                    <span className={styles.id}>1238731988</span>
+                                </td>
+                                <td>
+                                    <span className={styles.name}>
+                                        John Doe
+                                    </span>
+                                </td>
+                                <td>
+                                    <span className={styles.address}>123 Main St SLC, UT </span>
+                                </td>
+                                <td>
+                                    <span className={styles.total}>$79.80</span>
+                                </td>
+                            </tr>
+                        </tbody>
                     </table>
                 </div>
                 <div className={styles.row}>
