@@ -2,9 +2,9 @@ import dbConnect from "../../../util/mongo";
 import Product from "../../../models/Product";
 
 export default async function handler(req, res) {
-    const { 
-        method, 
-        query: { id } 
+    const {
+        method,
+        query: { id }
     } = req;
 
     dbConnect();
@@ -20,7 +20,9 @@ export default async function handler(req, res) {
 
     if (method === "PUT") {
         try {
-            const product = await Product.create(req.body);
+            const product = await Product.findByIdAndUpdate(id, req.body,{
+                new: true,
+            });
             res.status(201).json(product)
 
         } catch (err) {
