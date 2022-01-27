@@ -11,6 +11,7 @@ import axios from "axios";
 import Router from "next/router";
 import { useRouter } from "next/router";
 import { reset } from "../redux/cartSlice";
+import OrderDetails from "../components/OrderDetails";
 
 
 
@@ -28,8 +29,10 @@ const Cart = () => {
     const createOrder = async (data) => {
         try {
             const res = await axios.post("http://localhost:3000/api/orders", data);
-            res.status === 201 && router.push("/orders/" + res.data._id);
+            if (res.status === 201)
             dispatch(reset());
+            router.push(`/orders/${res.data._id}`);
+            
         } catch (err) {
             console.log(err)
         }
@@ -179,12 +182,13 @@ const Cart = () => {
                     ) : (
                         <button onClick={() => setOpen(true)} className={styles.button}>CHECKOUT NOW!</button>
                     )}
-
-
                 </div>
             </div>
+            {cash && (
+                <OrderDetails total={cart.total} createOrder={createOrder}  />
+            )}
         </div>
-    )
-}
+    );
+};
 
 export default Cart
