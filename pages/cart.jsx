@@ -18,6 +18,7 @@ const Cart = () => {
 
     const cart = useSelector((state) => state.cart);
     const [open, setOpen] = useState(false);
+    const [cash, setCash] = useState(false);
     const amount = cart.total;
     const currency = "USD";
     const style = { "layout": "vertical" };
@@ -160,7 +161,7 @@ const Cart = () => {
                     </div>
                     {open ? (
                         <div className={styles.paymentMethods}>
-                            <button className={styles.payButton}>CASH ON DELIVERY</button>
+                            <button className={styles.payButton} onClick={()=>(setCash(true))}>CASH ON DELIVERY</button>
                             <PayPalScriptProvider
                                 options={{
                                     "client-id": "AfNvdES2AUsUtPcF1YP1s1kDsN2d4uapaYKnSFHI38wEKYN6KminOc_9o2zRDjINrwr2ykJEqiFbXupQ",
