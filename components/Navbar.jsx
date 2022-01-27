@@ -22,7 +22,10 @@ const Navbar = () => {
 
             <div className={styles.item}>
                 <ul className={styles.list}>
-                    <li className={styles.listItem}>Homepage</li>
+                    <Link href="/" passHref>
+                        <li className={styles.listItem}>Homepage</li>
+                    </Link>
+                    
                     <li className={styles.listItem}>Products</li>
                     <li className={styles.listItem}>Menu</li>
                     <li className={styles.logo}>PIZZA</li>
